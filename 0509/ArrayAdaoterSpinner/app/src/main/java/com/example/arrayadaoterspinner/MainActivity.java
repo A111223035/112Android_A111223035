@@ -1,11 +1,14 @@
 package com.example.arrayadaoterspinner;
 
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+=======
+>>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
 import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
@@ -15,17 +18,22 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+<<<<<<< HEAD
 
     private Spinner drink, temp; //顯示飲品項目與溫度選項的 Spinner
     TextView txv; // 顯示訂單內容的 TextView
     private String[] tempSet1 = {"冰", "去冰", "溫"};
     private String[] tempSet2 = {"冰", "去冰"};
 
+=======
+    private Spinner drink, temp; //顯示飲品項目與溫度選項的
+>>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         txv = (TextView) findViewById(R.id.order);
         temp = (Spinner) findViewById(R.id.temp); //找出顯示溫度的 Spinner
 
@@ -54,5 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }); //設定監聽選取事件
 
+=======
+>>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
     }
 }

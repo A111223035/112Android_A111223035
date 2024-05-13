@@ -1,5 +1,9 @@
 plugins {
+<<<<<<< HEAD
     alias(libs.plugins.androidApplication)
+=======
+    alias(libs.plugins.android.application)
+>>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
 }
 
 android {
@@ -19,7 +23,14 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+<<<<<<< HEAD
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+=======
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+>>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
         }
     }
     compileOptions {
