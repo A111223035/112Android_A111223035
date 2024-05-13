@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
                     tempSet = tempSet1;
 
                 ArrayAdapter<String> tempAd = //依據溫度選項建立 ArrayAdapter
-                    new ArrayAdapter<>(MainActivity.this, //**與原例不同**)
-                        android.R.layout.simple_spinner_item, // 選單位打開時的顯示樣式
-                        tempSet; //溫度選項
+                        new ArrayAdapter<>(MainActivity.this, //**與原例不同**)
+                                android.R.layout.simple_spinner_item, // 選單位打開時的顯示樣式
+                                tempSet); //溫度選項
                 tempAd.setDropDownViewResource( //設定下拉選單的選項樣式
                         android.R.layout.simple_spinner_dropdown_item);
                 temp.setAdapter(tempAd); //設定使用 Adapter 物件
@@ -52,5 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }); //設定監聽選取事件
+
     }
 }
