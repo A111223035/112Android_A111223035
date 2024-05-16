@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 String dessert = spdesserts.getSelectedItem().toString();
                 TextView output = (TextView) findViewById(R.id.lblOutput);
                 output.setText("主餐：" +course +"\n甜點：" +dessert);
+            //他會補給我們程式碼
             }
+
         });
     }
 }

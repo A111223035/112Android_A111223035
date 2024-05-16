@@ -1,9 +1,5 @@
 plugins {
-<<<<<<< HEAD
-    alias(libs.plugins.androidApplication)
-=======
-    alias(libs.plugins.android.application)
->>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
+    id("com.android.application")
 }
 
 android {
@@ -23,14 +19,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-<<<<<<< HEAD
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-=======
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
->>>>>>> 4edeee94cdaa5e74a5aaaa2ab9346fbb81760974
         }
     }
     compileOptions {
@@ -41,11 +33,10 @@ android {
 
 dependencies {
 
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
